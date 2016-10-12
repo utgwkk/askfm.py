@@ -1,7 +1,6 @@
-from collections.abc import Iterator
 from . import parser
 
-class Answers(Iterator):
+class Answers:
     def __init__(self, answers):
         self._count = 0
         self._answers = parser.parse(answers)
