@@ -1,9 +1,8 @@
 import unittest
 import time
-import sys
-sys.path.append('.')
 import askfm
 import six
+
 
 class CrawlerTest(unittest.TestCase):
     def setUp(self):
