@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 from .pair import Pair
 
+
 def parse(answers):
     '''parse given HTML from crawler.'''
     soup = BeautifulSoup(answers)
