@@ -1,5 +1,6 @@
 from . import parser
 
+
 class Answers:
     def __init__(self, answers):
         self._count = 0
