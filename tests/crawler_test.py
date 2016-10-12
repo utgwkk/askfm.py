@@ -3,6 +3,7 @@ import time
 import sys
 sys.path.append('.')
 import askfm
+import six
 
 class CrawlerTest(unittest.TestCase):
     def setUp(self):
@@ -24,8 +25,8 @@ class CrawlerTest(unittest.TestCase):
         self.assertIsInstance(datas, askfm.Answers)
         for pair in datas:
             self.assertIsInstance(pair, askfm.Pair)
-            self.assertIsInstance(pair.question, str)
-            self.assertIsInstance(pair.answer, str)
+            self.assertIsInstance(pair.question, six.text_type)
+            self.assertIsInstance(pair.answer, six.text_type)
             break
 
     def test_crawl_with_page(self):
@@ -33,8 +34,8 @@ class CrawlerTest(unittest.TestCase):
         self.assertIsInstance(datas, askfm.Answers)
         for pair in datas:
             self.assertIsInstance(pair, askfm.Pair)
-            self.assertIsInstance(pair.question, str)
-            self.assertIsInstance(pair.answer, str)
+            self.assertIsInstance(pair.question, six.text_type)
+            self.assertIsInstance(pair.answer, six.text_type)
             break
 
     def test_crawl_with_large_page_returns_empty_answers(self):
