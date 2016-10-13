@@ -3,8 +3,5 @@ class Pair:
         self.question = question
         self.answer = answer
 
-    def __dict__(self):
-        return {'question': question, 'answer': answer}
-
-    def __tuple__(self):
-        return (question, answer)
+    def __iter__(self):
+        return iter({'question': self.question, 'answer': self.answer}.items())
