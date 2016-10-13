@@ -7,3 +7,11 @@ python:
   - "nightly"
 install: "pip install -r requirements.txt"
 script: nosetests tests/
+
+deploy:
+  provider: pypi
+  user: utgwkk
+  password:
+    secure: "JTc5WqUH9bJHrekCGehq8KswopPpBvlWJ/Q7D5ZJDZt365NRKZwOLg/nLfndplsCDSJT2IZq7pB3KJEQhZmez1jQ4PozDAQHpFBK2n9eNIuH0ieA40QKRc8Vw35g1rH3tl/RiR3us/AFHzvwPxXiW5Wtxs4yj5w8ZXqCB5rosCs6JMEhwFRyiGt7mgCvy01dP8Vp/pzK4+Fdm+hoZ3ndTH8XV+OKdCPyKnIvLObhJLRO08+rWp/1T0GchTPzUX3lbxe8vLN5rBrzW55Mdzw13sDb2M0Kc3wHegh1HUwkK5QOrEeuXaGuYtGpIeZOPR7IXENOJ8DgwFUHcx/gdkBmik+CRJ8HTvFP5tVkEw0WsEnVI5WuWQUZeABVmLw2Q0GZ+UPQtX+05F11MvCQFp9h0FByOcfO+toChsJXgVwOI4dnOYCWntjOgEn8fAzwUcuK1XaQ7Lw9c8J2SOGRlFG2ez1bsi23r2pXzwo7hrwISEWipUZUFIRf6hQ+Y/rBkYEZuoebkHqF6yGXL2hRyG7kfJ51tZfYphuCfQV33BBIx2P5SLGha6+SjChZ+UmEy51A+iApjmPEx0zRMps4oc5GNGtX7snXXW3nKpunh7PZckTOpWjcsk7DhL8Cz19+OVVlxCn4plEO86iG2lECMwsF8GtEcrLLJKU8I3hJl4MIHiU="
+  on:
+    tags: true
