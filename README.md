@@ -21,7 +21,7 @@ for pair in crawler.crawl():
 
 ## Document
 
-### `askfm.Crawler(page)`
+### `askfm.Crawler(username)`
 
 Initializes ask.fm crawler.
 
