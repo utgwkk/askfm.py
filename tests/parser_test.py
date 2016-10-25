@@ -6,7 +6,7 @@ import six
 
 class ParserTest(unittest.TestCase):
     def test_parse_question(self):
-        html = '''
+        html = u'''
 <div class="item streamItem streamItem-answer">
     <div class="streamItemContent streamItemContent-question">
       <h2>おいC++エヴァンゲリオン、C++ではなくSwiftを選ぶGoogleを許していいのか？</h2>
@@ -30,8 +30,8 @@ class ParserTest(unittest.TestCase):
         result = askfm.parser.parse(html)
         self.assertEqual(len(result), 1)
         self.assertEqual(result[0].id, 135859194711)
-        self.assertEqual(result[0].question, 'おいC++エヴァンゲリオン、C++ではなくSwiftを選ぶGoogleを許していいのか？')
-        self.assertEqual(result[0].answer, 'Swiftは罠がありそうで怖い。')
+        self.assertEqual(result[0].question, u'おいC++エヴァンゲリオン、C++ではなくSwiftを選ぶGoogleを許していいのか？')
+        self.assertEqual(result[0].answer, u'Swiftは罠がありそうで怖い。')
 
 if __name__ == '__main__':
     unittest.main()
