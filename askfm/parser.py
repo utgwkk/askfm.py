@@ -7,6 +7,7 @@ def _href_to_id(href):
 
 def parse(answers):
     '''parse given HTML from crawler.'''
+    answers = answers.replace('<br />', '\n')
     soup = BeautifulSoup(answers, 'html.parser')
     retval = []
     for div in soup.select('.streamItem-answer'):
