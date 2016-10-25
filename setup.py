@@ -1,8 +1,7 @@
 from setuptools import setup, find_packages
-from askfm import __version__
 
 setup(name='askfm.py',
-      version=__version__,
+      version='0.6',
       description='Ask.fm crawler',
       author='utgwkk',
       author_email='utagawa.kiki@gmail.com',
