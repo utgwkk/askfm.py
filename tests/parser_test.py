@@ -11,7 +11,7 @@ class ParserTest(unittest.TestCase):
     <div class="streamItemContent streamItemContent-question">
       <h2>おいC++エヴァンゲリオン、C++ではなくSwiftを選ぶGoogleを許していいのか？</h2>
 </div>
-  <p class="streamItemContent streamItemContent-answer">Swiftは罠がありそうで怖い。</p>
+  <p class="streamItemContent streamItemContent-answer">Swiftは<br />罠がありそうで怖い。</p>
   <div class="streamItemContent streamItemContent-footer">
     <a class="streamItemsAge" title="5月 13, 2016 14:11:43 GMT" href="/EzoeRyou/answers/135859194711">5ヵ月前</a>
 </div>
@@ -31,7 +31,7 @@ class ParserTest(unittest.TestCase):
         self.assertEqual(len(result), 1)
         self.assertEqual(result[0].id, 135859194711)
         self.assertEqual(result[0].question, u'おいC++エヴァンゲリオン、C++ではなくSwiftを選ぶGoogleを許していいのか？')
-        self.assertEqual(result[0].answer, u'Swiftは罠がありそうで怖い。')
+        self.assertEqual(result[0].answer, u'Swiftは\n罠がありそうで怖い。')
 
 if __name__ == '__main__':
     unittest.main()
