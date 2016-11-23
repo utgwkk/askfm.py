@@ -14,7 +14,7 @@ def parse(answers):
         try:
             _id = _href_to_id(div.select('.streamItemContent-footer')[0].a.get('href'))
             question = div.select('.streamItemContent-question')[0].h2.string
-            answer = div.select('.streamItemContent-answer_old')[0].string
+            answer = div.select('.answerWrapper .streamItemContent-answer')[0].string
             retval.append(Pair(_id, question, answer))
         except IndexError:
             pass
