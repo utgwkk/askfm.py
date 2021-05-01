@@ -7,7 +7,7 @@ class Crawler:
         self._username = username
 
     def generate_url(self, page=0):
-        return 'http://ask.fm/{}/answers/more?page={}' \
+        return 'https://ask.fm/{}/answers/more?page={}' \
                 .format(self._username, page)
 
     def crawl(self, page=0):

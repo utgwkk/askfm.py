@@ -7,7 +7,7 @@ import six
 
 class ParserTest(unittest.TestCase):
     def test_parse_question(self):
-        html = requests.get('http://ask.fm/ezoeryou/answers/more?page=2').text
+        html = requests.get('https://ask.fm/ezoeryou/answers/more?page=2').text
         result = askfm.parser.parse(html)
         self.assertEqual(len(result), 25)
         self.assertEqual(result[0].id, 135859194711)

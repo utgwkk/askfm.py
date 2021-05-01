@@ -13,11 +13,11 @@ class CrawlerTest(unittest.TestCase):
 
     def test_generate_url(self):
         url = self.crawler.generate_url()
-        self.assertEqual(url, 'http://ask.fm/ezoeryou/answers/more?page=0')
+        self.assertEqual(url, 'https://ask.fm/ezoeryou/answers/more?page=0')
 
     def test_generate_url_with_page(self):
         url = self.crawler.generate_url(5)
-        self.assertEqual(url, 'http://ask.fm/ezoeryou/answers/more?page=5')
+        self.assertEqual(url, 'https://ask.fm/ezoeryou/answers/more?page=5')
 
     def test_crawl_without_page(self):
         datas = self.crawler.crawl()

@@ -9,7 +9,7 @@ $ pip install askfm.py
 
 ## Example
 
-This program shows recent 25 answers of [ezoeryou](http://ask.fm/ezoeryou).
+This program shows recent 25 answers of [ezoeryou](https://ask.fm/ezoeryou).
 
 ```python
 import askfm
