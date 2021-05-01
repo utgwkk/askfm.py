@@ -10,6 +10,3 @@ beautifulsoup4 = "*"
 nose = "*"
 requests = "*"
 six = "*"
-
-[requires]
-python_version = ">= 3.6"
