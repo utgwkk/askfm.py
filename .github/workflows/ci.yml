@@ -35,4 +35,4 @@ jobs:
         run: pipenv install --deploy --dev
 
       - name: Test
-        run: nosetests
+        run: pipenv run nosetests
