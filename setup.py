@@ -5,7 +5,7 @@ with open("./README.md") as f:
     long_description = f.read()
 
 setup(name='askfm.py',
-      version='0.6.5',
+      version='0.6.6',
       description='[No longer maintained] Ask.fm crawler',
       long_description=long_description,
       author='utgwkk',
