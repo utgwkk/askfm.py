@@ -6,7 +6,7 @@ with open("./README.md") as f:
 
 setup(name='askfm.py',
       version='0.6.5',
-      description='Ask.fm crawler',
+      description='[No longer maintained] Ask.fm crawler',
       long_description=long_description,
       author='utgwkk',
       author_email='utagawa.kiki@gmail.com',
