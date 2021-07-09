@@ -1,8 +1,13 @@
 from setuptools import setup, find_packages
 
+
+with open("./README.md") as f:
+    long_description = f.read()
+
 setup(name='askfm.py',
       version='0.6.5',
       description='Ask.fm crawler',
+      long_description=long_description,
       author='utgwkk',
       author_email='utagawa.kiki@gmail.com',
       url='https://github.com/utgwkk/askfm.py',
