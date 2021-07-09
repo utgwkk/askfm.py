@@ -1,6 +1,10 @@
 # askfm.py [![Test](https://github.com/utgwkk/askfm.py/actions/workflows/ci.yml/badge.svg)](https://github.com/utgwkk/askfm.py/actions/workflows/ci.yml) [![PyPI version](https://badge.fury.io/py/askfm.py.svg)](https://badge.fury.io/py/askfm.py)
 Ask.fm crawler
 
+## WARNING: this library is no longer maintained
+
+askfm.py is no longer maintained. Please consider using other library if you want to crawl ask.fm.
+
 ## Install
 
 ```
